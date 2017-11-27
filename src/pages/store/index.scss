@@ -1,0 +1,198 @@
+@import "../../assets/scss/support";
+
+
+.store{
+
+  &-bg{
+    width: 100%;
+    height: 80px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: linear-gradient(#51bcf6, #3097e5, #1f83dd);
+
+    &-head{
+      @include storehead();
+      padding-top: 0;
+    }
+  }
+
+  &-content{
+    background: $cl-bg;
+    
+    .tab{
+
+      &-bar{
+        overflow: hidden;
+        clear: both;
+        border-bottom: 1px solid #efeff4;
+        
+        &-item{
+          padding: 8px 0;
+          position: relative;
+          width: 50%;
+          float: left;
+          box-sizing: border-box;
+          line-height: 35px;
+          text-align: center;
+          font-size: 18px;
+          color: $cl-aux;
+          overflow: hidden;
+          border-right: 1px solid #efeff4;
+          
+          &::before{
+            position: absolute;
+            bottom: 0;
+            left: center;
+            content: "";
+            display: inline-block;
+            width: 41%;
+            border-bottom: none;
+          }
+          
+          &.on{
+            display: block;
+            color: #4294f7;
+
+            &::before{
+              border-bottom: 2px solid #4294f7;
+            }
+          }
+        }
+      }
+
+      &-panel{
+
+        &-content{
+          
+          display: none;
+
+          .hot{
+
+            .item{
+              padding: 10px 15px;
+              display: flex;
+              align-items: center;
+              border-bottom: 2px solid  #efeff4;
+
+              .img{
+                margin-right: 12px;
+
+                image{
+                  display: block;
+                  height: 60px;
+                  width: 60px;
+                }
+              }
+
+              .txt{
+                flex: 2;
+              
+                .tt{
+                  margin-bottom: 5px;
+                  font-size: 17px;
+                  color: $cl-aux;
+                }
+
+                .price{
+                  font-size: 16px;
+                  color: #ec5937;
+                }
+              }
+
+              .operation{
+                flex: 1;
+
+                .add{
+                  float: right;
+                  position: relative;
+                  margin-top: 4px;
+                  width: 18px;
+                  height: 18px;
+                  background: #4294f7;
+                  border-radius: 50%;
+
+                  &::before,&::after{
+                    position: absolute;
+                    left: 6px;
+                    top: 8px;
+                    content: "";
+                    width: 8px;
+                    height: 2px;
+                    display: inline-block;
+                    background: $cl-bg;
+                    border-radius: 5px;
+                  }
+
+                  &::after{
+                    left: 9px;
+                    top: 5px;
+                    height: 8px;
+                    width: 2px;
+                  }
+                }
+
+                .num{
+                  float: right;
+                  margin: 0 3px;
+                  text-align: center;
+                  display: inline-block;
+
+                  width: 24px;
+                  font-size: 15px;
+                  color: $cl-main;
+                }
+
+                .plus{
+                  margin-top: 4px;
+                  float: right;
+                  position: relative;
+                  width: 18px;
+                  height: 18px;
+                  background: #4294f7;
+                  border-radius: 50%;
+
+                  &::before{
+                    position: absolute;
+                    left: 6px;
+                    top: 8px;
+                    content: "";
+                    width: 8px;
+                    height: 2px;
+                    display: inline-block;
+                    background: $cl-bg;
+                    border-radius: 5px;
+                  }
+                }        
+              }
+            }
+          }
+
+          .info{
+            .img{
+              image{
+                display: block;
+
+                width:100%;
+                height: 230px;
+              }
+            }
+
+            .address{
+              padding: 15px;
+              border-top: 2px solid #efeff4;
+              font-size: 17px;
+              color: $cl-aux;
+              box-sizing: border-box;
+              background: $cl-bg;
+            }
+          }
+
+          &.on{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+}

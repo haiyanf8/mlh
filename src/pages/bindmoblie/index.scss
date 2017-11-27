@@ -1,0 +1,179 @@
+@import "../../assets/scss/support";
+
+
+.reg{
+
+  @include container();
+
+  &-head{
+    position: relative;
+    margin-top: 57px;
+    margin-bottom: 57px;
+
+    text-align: center;
+    height: 20px;
+
+    &::before,&::after{
+      margin-right: 32px;
+      content: "";
+      display: inline-block;
+
+      width: 122px;
+      height: 2px;
+      background: $cl-bd;
+    }
+
+    &::after{
+      right: 0;
+      margin-right: 0;
+      margin-left: 32px;
+    }
+
+    .title{
+      position: absolute;
+      top: 5px;
+      margin-left: -16px;
+      display: inline-block;
+    }
+  }
+
+  &-content{
+    
+    &-input{
+      padding: 9px;
+      margin-bottom: 15px;
+
+      width: 100%;
+      height: 48px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+      font-size: 18px;
+      background-color: $cl-wt;
+      color: $cl-bg-gr;
+        
+      .num{
+        float: left;
+        
+        width: 45px;
+        height: 28px;
+        line-height: 28px;
+        border-right: 2px solid #ccc;
+      }
+
+      .tel{
+        padding-left: 15px;
+        float: right;
+        width: 260px;
+        height: 28px;
+        line-height: 28px;
+        color: $cl-main;
+
+        &::placeholder{
+          color: $cl-bg-gr;
+        }
+      }
+
+      .code{
+        float: left;
+
+        width: 210px;
+        height: 28px;
+        line-height: 28px;
+      }
+      
+      .btn{
+        position: static;
+        border-radius: 0;
+        float: right;
+        width: 110px;
+        height: 28px;
+        line-height: 28px;
+        border: none;
+        color: $cl-aux;
+        font-size: 14px;
+        background-color: none;
+        border-left: 1px solid #ccc;
+        
+        &.active{
+          color: red;
+        }
+      }
+    }
+
+    &-agreement{
+      padding: 20px 0 35px;
+      font-size: 14px;
+      color: #4294f7;
+        
+      .agree{
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #4294f7;
+        border-radius: 2px;
+
+        &.active{
+        
+          &::before,&::after{
+            content: "";
+            height: 8px; 
+            width: 2px; 
+            display: inline-block; 
+            background: #4294f7; 
+            position:absolute; 
+            top: 50%;
+            left: 50%;
+            margin-top: -3px;
+            border-radius: 10px;
+            transform: rotate(45deg);
+          }
+
+          &::before{
+            height: 4px;
+            top: 9px;
+            left: 3px;
+            transform:rotate(-45deg)
+          }
+        }
+      }
+
+      .txt{
+        font-size: 14px;
+      }
+
+      .more{
+        float: right;
+        color: #666;
+        font-size: 14px;
+        color: #4294f7;
+
+        &::after{
+          content: "";
+
+          width:6px;
+          height:6px;
+          display:inline-block;
+          border-right:1px solid #4294f7;
+          border-bottom:1px solid #4294f7;
+          transform:rotate(-45deg);
+        }
+      }
+    }
+    
+    .registerbtn{
+      
+      .regbtn{
+        @include commonbutton();
+      }
+
+    
+      @include disbaledbutton(20px);
+
+    }
+  }
+}
+
+

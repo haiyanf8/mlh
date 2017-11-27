@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/cart/index",
+        "pages/bindmoblie/index",
+        "pages/my/index",
+        "pages/store/index",
+        "pages/shop/index",
+        "pages/activity/index",
+        "pages/activity-details/index",
+        "pages/good-details/index",
+        "pages/order/index",
+        "pages/order-details/index",
+        "pages/pay/index",
+        "pages/get-coupons/index",
+        "pages/use-coupons/index",
+        "pages/coupons-list/index",
+        "pages/coupons-details/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#51bcf6",
+        "navigationBarTitleText": "码澜花",
+        "navigationBarTextStyle": "#7f8389"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#4095f7",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "image/home.png",
+                "selectedIconPath": "image/home_D.png",
+                "text": "扫码"
+            },
+            {
+                "pagePath": "pages/cart/index",
+                "iconPath": "image/cart.png",
+                "selectedIconPath": "image/cart_D.png",
+                "text": "购物车"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "iconPath": "image/my.png",
+                "selectedIconPath": "image/my_D.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

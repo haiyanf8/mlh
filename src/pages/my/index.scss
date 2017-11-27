@@ -1,0 +1,129 @@
+@import "../../assets/scss/support";
+
+.my{
+
+  &-head{
+    margin-bottom: 2px;
+    padding: 38px 0 22px 0;
+    box-sizing: border-box;
+    background: linear-gradient(#51bcf6, #3097e5, #1f83dd);
+    
+    &-avtar{
+      text-align: center;
+      color: $cl-wt;
+      font-size: 16px;
+
+      image{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+        border: 3px solid $cl-bg;
+      }
+    }
+  }
+
+  &-content{
+    
+    .line{
+      position: relative;
+      display: block;
+      margin-bottom: 2px;
+      box-sizing: border-box;
+      padding: 0 15px;
+      color: $cl-main;
+      font-size: 17px;
+      height: 50px;
+      line-height: 50px;
+
+      background: $cl-bg;
+
+      .icon{
+        padding-left: 30px;
+        
+        &::before{
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          content: "";
+          display: inline-block;
+          width: 21px;
+          height: 21px;
+          margin-right: 12px;
+        }
+      
+        &.integral{
+          &::before{
+             background: url("http://wx.lian-gou.com/assets/img/my-icon-integral.png") 0 center no-repeat;
+             background-size: contain;
+          }
+        }
+
+        &.phone{
+          &::before{
+             background: url("http://wx.lian-gou.com/assets/img/my-icon-phone.png") 0 center no-repeat;
+             background-size: contain;
+          }
+        }
+
+        &.coupon{
+          &::before{
+             background: url("http://wx.lian-gou.com/assets/img/my-icon-coupon.png") 0 center no-repeat;
+             background-size: contain;
+          }
+        }
+
+        &.record{
+          &::before{
+             background: url("http://wx.lian-gou.com/assets/img/my-icon-record.png") 0 center no-repeat;
+             background-size: contain;
+          }
+        }
+      }
+
+      
+      &.bottom{
+        padding: 0;
+        margin-top: 13px;
+        clear: both;
+        
+        navigator{
+          padding: 0 15px;
+          display: block;
+          height: 50px;
+          box-sizing: border-box;
+
+          .coupon{
+            float: left;
+          }
+
+          .more{
+            float: right;
+            color: $cl-bg-gr;
+
+            &::after{
+              margin-left: 8px;
+              content: "";
+              width: 10px;
+              height: 10px;
+              display: inline-block;
+
+              border-right: 1px solid $cl-bg-gr;
+              border-bottom: 1px solid $cl-bg-gr;
+
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+
+      &.record{
+        margin-top: 0;
+      }
+    }
+  }
+}

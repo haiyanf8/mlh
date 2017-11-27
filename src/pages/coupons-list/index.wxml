@@ -1,0 +1,41 @@
+<view class="coupons">
+  <view class="coupons-bg">
+    <view class="commonhead">
+      <view class="top"></view>
+      <view class="middle">我的优惠券</view>
+      <view class="bottom"></view>
+    </view>
+  </view>
+  
+  <view class="couponslist">
+    <view class="item" bindtap="getCoupon" data-id="1">
+      <view class="box">
+        <view class="left">
+          <text class="tt">满50减5</text>
+          <text class="date">有效期：2017.09.24-2017.09.29</text>
+        </view>
+
+        <view class="right">
+          <text class="ct">通用</text>
+          <text class="more">详情</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="coupons-content-item" bindtap="getCoupon" data-id="1">
+      <view class="box">
+        <view class="left">
+          <text class="tt">满50减5</text>
+          <text class="date">有效期：2017.09.24-2017.09.29</text>
+        </view>
+
+        <view class="right">
+          <text class="ct">通用</text>
+          <text class="more">详情</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+

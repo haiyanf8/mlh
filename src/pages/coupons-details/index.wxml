@@ -1,0 +1,25 @@
+<view class="coupons-details">
+  <view class="coupons-details-bg">
+    <view class="commonhead">
+      <view class="top"></view>
+      <view class="middle">优惠券详情</view>
+      <view class="bottom"></view>
+    </view>
+  </view>
+  
+  <view class="coupons-details-content">
+    <view class="content">
+      <view class="title">满50减5</view>
+      <view class="type">通用</view> 
+ 
+      <view class="cont">
+      说明：全场使用全场使用，各种商品可以使用低价优惠，全场使用全场使用，各种商品，可以全场使用全场使用，各种商品可以使用用低价优惠，全场使用全场使用，各种商品，可以全场使用全场使用，各种商品可以使用用低价优惠，全场使用全场使用，各种商品，可以全场使用全场使用，各种商品可以使用低价优惠使用低价优惠。各种商品可以使用低价优惠使用低价优惠。
+      </view>
+
+      <view class="date">有效期：2017.09.24-2017.09.29</view>                             
+
+    </view>
+    <view class="btn" bindtap="goback">返回</view>
+  </view>
+</view>
+

@@ -1,0 +1,35 @@
+<view class="my">
+  <view class="my-head">
+    <view class="my-head-avtar">
+  		<image src="{{userInfo.avatarUrl}}"></image>
+  		<text>{{userInfo.nickName}}</text>
+  	</view>
+  </view>
+
+  <view class="my-content">
+  	<veiw class="line">
+  		<text class="icon integral">累计积分：</text>
+      <text>59789</text>
+  	</veiw>
+  	
+  	<veiw class="line integral">
+  		<text class="icon phone">手机号码：</text>
+      <text>157******3698</text>
+  	</veiw>
+
+  	<veiw class="line bottom">
+  		<navigator url="/pages/coupons-list/index">
+  			<text class="icon coupon">我的优惠券</text>
+  			<text class="more">查看</text>
+  		</navigator>
+  	</veiw>
+
+  	<veiw class="line bottom record">
+  		<navigator url="/pages/order/index">
+  			<text class="icon coupon record">我的购物记录</text>
+  			<text class="more">查看</text>
+  		</navigator>
+  	</veiw>
+
+  </view>
+</view>

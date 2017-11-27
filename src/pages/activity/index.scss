@@ -1,0 +1,114 @@
+@import "../../assets/scss/support";
+
+
+.register{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  &-bg{
+    position: relative;
+
+    @include commonbg();
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    .box{
+      padding-top: 15px;
+      //position: absolute;
+      top: 0;
+      left: 0;
+      height: 240px;
+
+      .slide{
+        height: 206px;
+        border-radius: 9px;
+        box-shadow: 0 5px 10px 5px rgba(0,0,0, 0.2);
+      
+        swiper{
+          height: 240px;
+        }
+    
+        &-item{
+          border-radius: 9px;
+
+          &-image{
+            width: 100%;
+            display: block;
+            height: 206px;
+            border-radius: 9px;
+            object-fit: fill;
+        }
+      }
+    }
+    }
+  }
+
+  &-content{
+    margin: 85px auto 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    &-list{
+      margin: 10px auto 15px;
+      padding: 10px 15px;
+      background: $cl-bg;
+      border-radius: 7px;
+
+      .item{
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #efeff4;
+
+        &:last-child{
+          border-bottom: none;
+        }
+
+        .img{
+          width: 38px;
+          height: 38px;
+
+          image{
+            width: 38px;
+            height: 38px;
+          }
+        }
+
+        .info{
+          flex: 1;
+          margin-left: 7px;
+
+          .top{
+            font-size: 17px;
+            
+            .tt{
+              color: $cl-main
+            }
+            .discount{
+              margin-left: 8px;
+              color: #ec5937;
+            }
+          }
+
+          .bottom{
+            font-size: 14px;
+            color: $cl-aux;
+          }
+        }
+
+        .date{
+          font-size: 14px;
+          color: $cl-aux;
+        }
+      }
+    }
+
+    &-btn{
+      margin-bottom: 15px;
+      @include commonbutton();
+    }
+  }
+}

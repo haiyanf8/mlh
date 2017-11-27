@@ -1,0 +1,84 @@
+<view class="cart">
+	<view class="cart-title">
+		威迪斯面包
+	</view>
+
+	<view class="cart-content">
+
+	  <view class="item">
+	  	<view class="check active"></view>
+	    <view class="img">
+	      <image src="../../image/pic.jpg"></image>
+	    </view>
+	    <view class="txt">
+	      <view class="tt">思碟轩月饼</view>
+	      <view class="price">¥12.90元</view>
+	    </view>
+	    <view class="operation">
+	      <view class="add"></view>
+	      <input type="number" class="num"></input>
+	      <view class="plus"></view>
+	    </view>
+	  </view>
+
+	  <view class="item">
+	  	<view class="check"></view>
+	    <view class="img">
+	      <image src="../../image/pic.jpg"></image>
+	    </view>
+	    <view class="txt">
+	      <view class="tt">思碟轩月饼</view>
+	      <view class="price">¥12.90元</view>
+	    </view>
+	    <view class="operation">
+	      <view class="add"></view>
+	      <input type="number" class="num"></input>
+	      <view class="plus"></view>
+	    </view>
+	  </view>
+
+
+	  <view class="item">
+	  	<view class="check"></view>
+	    <view class="img">
+	      <image src="../../image/pic.jpg"></image>
+	    </view>
+	    <view class="txt">
+	      <view class="tt">思碟轩月饼</view>
+	      <view class="price">¥12.90元</view>
+	    </view>
+	    <view class="operation">
+	      <view class="add"></view>
+	      <input type="number" class="num"></input>
+	      <view class="plus"></view>
+	    </view>
+	  </view>
+
+	</view>
+
+
+	<view class="cart-discount">
+		<view class="counpons">
+			<view class="tt">优惠券</view>
+			<view class="ct" bindtap="usercoupons">3张可用</view>
+			<view class="txt" hidden="isselect">减免 <text>¥6.00</text></view>
+		</view>
+	</view>
+
+	<view class="cart-box">
+		<view class="total">
+			<view class="btn">
+				<text class="check active"></text>
+				<text class="ct">全选</text>
+			</view>
+			<view class="txt">
+				合计：<text>¥108.70</text>元  
+			</view>
+			<view class="num"><text>（15）</text>件</view>
+		</view>
+
+		<view class="compute">结算</view>
+	</view>
+
+
+</view>

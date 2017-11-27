@@ -1,0 +1,128 @@
+@import "../../assets/scss/support";
+
+
+.store{
+
+  &-index{
+    &-bg{
+      position: relative;
+
+      @include commonbg();
+      padding: 0 15px;
+      box-sizing: border-box;
+
+      &-head{
+       @include storehead();
+      }
+    }
+
+    &-activity{
+      width: 100%;
+      padding: 0 15px;
+      position: absolute;
+      top: 102px;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      &-content{
+
+        background-color: $cl-bg;
+        box-sizing: border-box;
+        border-radius: 7px;
+
+        swiper{
+          height: 365px;
+        }
+
+        &-box{
+
+        width: 100%;
+
+        .head{
+          border-radius: 8px;
+          box-sizing: border-box;
+          padding: 9px 25px;
+          overflow: hidden;
+
+          .tt{
+            float: left;
+          
+            width: 46px;
+            height: 20px;
+            line-height: 20px;
+            color: $cl-wt;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 23px;
+            background-color: #42b9f7;
+
+          .notice{
+
+            &::before{
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              color: $cl-wt;
+            }
+          }
+
+          .address{
+
+            &::before{
+              content: "\f041";
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              color: $cl-wt;
+            }
+          }
+
+          }
+          .ct{
+            float: right;
+            font-size: 13px;
+            color: #999;
+          }
+        }
+
+        .img{
+
+          image{
+            display: block;
+            height: 230px;
+            width: 100%;
+          }
+        }
+
+        .txt{
+          display: flex;
+          align-items: center;
+          padding: 9px 22px 9px 27px;
+
+          .desc{
+            font-size: 14px;
+            color: #575757;
+
+            text{
+              display: inline-block;
+            }
+          }
+          .price{
+            margin-left: 20px;
+            font-size: 24px;
+            color: #e60012;
+            text-align: right;
+          }
+        }
+        }
+      }
+
+      &-btn{
+        margin-top: 50px;
+        margin-bottom: 25px;
+        @include commonbutton();
+        box-sizing: border-box;
+      }
+    }
+  }
+}

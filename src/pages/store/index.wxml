@@ -1,0 +1,100 @@
+<view class="store">
+  <view class="store-bg">
+    <view class="store-bg-head">
+      <view class="img">
+        <image src="../../image/pic.jpg"></image>
+      </view>
+      <view class="txt">
+        <view class="tt">
+          <view class="name">威迪斯面包</view>
+          <view class="coupons" bindtap="getcoupon">领券</view>
+        </view>
+        <view class="notice">
+           秋季中秋节，美味月饼等你来。
+          </view>
+        <view class="address">
+          拱墅区学府路41号
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="store-content">
+
+    <view class="tab">
+      <view class="tab-bar" bindtap="tabClick">
+        <view class="tab-bar-item {{tabArr.curHdIndex == '0' ? 'on': ''}}" data-id="0">热卖商品</view>
+        <view class="tab-bar-item {{tabArr.curHdIndex == '1' ? 'on': ''}}" data-id="1">商家信息</view>
+      </view>
+
+      <veiw class="tab-panel">
+        <view class="tab-panel-content {{tabArr.curBdIndex == '0' ? 'on' : ''}}" >
+          <view class="hot">
+            <view class="item">
+              <view class="img">
+                <image src="../../image/pic.jpg"></image>
+              </view>
+              <view class="txt">
+                <view class="tt">思碟轩月饼</view>
+                <view class="price">¥12.90元</view>
+              </view>
+              <view class="operation">
+                <view class="add"></view>
+                <input type="number" class="num"></input>
+                <view class="plus"></view>
+              </view>
+            </view>
+
+            <view class="item">
+              <view class="img">
+                <image src="../../image/pic.jpg"></image>
+              </view>
+              <view class="txt">
+                <view class="tt">思碟轩月饼</view>
+                <view class="price">¥12.90元</view>
+              </view>
+              <view class="operation">
+                <view class="add"></view>
+                <input type="number" class="num"></input>
+                <view class="plus"></view>
+              </view>
+            </view>
+
+            <view class="item">
+              <view class="img">
+                <image src="../../image/pic.jpg"></image>
+              </view>
+              <view class="txt">
+                <view class="tt">思碟轩月饼</view>
+                <view class="price">¥12.90元</view>
+              </view>
+              <view class="operation">
+                <view class="add"></view>
+                <input type="number" class="num"></input>
+                <view class="plus"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="tab-panel-content {{tabArr.curBdIndex == '1' ? 'on' : ''}}">
+          <view class="info">
+            <view class="img">
+              <image src="../../image/pic.jpg"></image>
+            </view>
+            <view class="address">  
+              拱墅区学府路85号
+            </view>
+            <view class="address">
+              营业时间：9:00-21:00
+            </view>
+            <view class="address">
+              电话：15960142204
+            </view>
+          </view>
+        </view>
+
+      </veiw>
+    </view>
+  </view>
+</view>

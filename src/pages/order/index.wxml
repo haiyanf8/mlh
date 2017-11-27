@@ -1,0 +1,48 @@
+<view class="order">
+  <view class="order-bg">
+    <view class="commonhead">
+      <view class="top"></view>
+      <view class="middle">我的购物记录</view>
+      <view class="bottom"></view>
+    </view>
+  </view>
+    <view class="order-content">
+      
+      <view class="order-content-conts">
+        
+        <view class="order-content-conts-item" bindtap="getorderdetail" data-id="1"  data-storeid ="1">
+          <view class="img">
+            <image src="../../image/noregister-ewm.png"></image>
+          </view>
+        <view class="txt">
+          <view class="tt">这里是标题</view>
+          <view class="ct"><text>4</text>件商品 共计：<text>56</text>元</view>
+          <view class="info">
+            <text class="date">2017/09/19 19:30 </text>
+            <text class="more">详情</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="order-content-conts-item" bindtap="getorderdetail" data-id="2" data-storeid ="1">
+        <view class="img">
+          <image src="../../image/noregister-ewm.png"></image>
+        </view>
+        <view class="txt">
+          <view class="tt">这里是标题</view>
+          <view class="ct"><text>4</text>件商品 共计：<text>56</text>元</view>
+          <view class="info">
+            <text class="date">2017/09/19 19:30 </text>
+            <text class="more">详情</text>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+    
+    <view class="order-content-btn" bindtap="gotostoreindex">返回</view>
+
+  </view>
+</view>
+

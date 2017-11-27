@@ -1,0 +1,110 @@
+
+@import "../../assets/scss/support";
+
+.pay{
+
+  &-info{
+    position: relative;
+    margin: 25px auto;
+    width: 100px;
+    height: 100px;
+
+    background-color: #4294f7;
+    border-radius: 50%;
+
+    &::before,&::after{
+      content: "";
+      height: 50px; 
+      width: 5px; 
+      display: block; 
+      background: $cl-bg; 
+      position:absolute; 
+      top: 25px;
+      left: 56px;
+      border-radius: 10px;
+      transform:rotate(45deg);
+    }
+    
+    &::before{
+      height: 20px;
+      top: 50px; 
+      left: 34px;
+      transform:rotate(-45deg)
+    }
+    
+  }
+
+  &-content{
+    margin: 15px;
+    padding: 20px;
+    background-color: $cl-bg;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+    color: $cl-main;
+
+    .title{
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .ct{
+      padding: 8px 0 25px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .desc{
+      margin-bottom: 10px;
+      line-height: 1.5;
+
+      text{
+        display: block;
+        font-size: 14px;
+      }
+      .date{
+        color: #999;
+      }
+    }
+
+    .list{
+          
+      .item{
+        padding: 10px 0;
+        display: flex;
+        border-top: 2px solid #efeff4;
+        font-size: 17px;
+        color: $cl-main;
+
+        &:nth-last-child(2){
+          border-bottom: 2px solid #efeff4;
+        }
+
+        .name{
+          flex: 2;
+        }
+    
+        .number{
+          flex: 1;
+          font-size: 14px;
+          color: $cl-aux;
+          text-align: right;
+        }
+
+        .price{
+          flex: 1;
+        }
+      }
+
+      .total{
+        margin-top: 12px;
+        margin-bottom: 13px;
+        font-size: 17px;
+        color: $cl-main;
+        text-align: right;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+<view class="good-details">
+  <view class="good-details-bg">
+    <view class="good-details-bg-head">
+      <view class="img">
+        <image src="../../image/pic.jpg"></image>
+      </view>
+      <view class="txt">
+        <view class="tt">威迪斯面包</view>
+        <view class="notice">
+           秋季中秋节，美味月饼等你来。
+          </view>
+        <view class="address">
+          拱墅区学府路41号
+        </view>
+      </view>
+    </view>
+
+    <view class="good-details-content">
+      <view class="title">中秋月饼</view>
+
+      <view class="desc">
+        <view>价格：<text>¥12.50元</text></view>
+        <view>生产日期：9月10日</view>
+        <view>保质期：20天</view>
+        <view>产地：本店纯手工产品</view>
+        <view>配料：小麦粉、瓜子、核桃、白砂糖等</view>
+
+        <view>
+          <image src="../../image/pic.jpg"></image>
+        </view>
+
+         <view>
+          <image src="../../image/pic.jpg"></image>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="good-details-btn">
+      <view class="btn">返 回</view>
+      <view class="btn">加入购物车</view>
+    </view>
+  </view>
+
+</view>

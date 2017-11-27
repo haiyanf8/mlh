@@ -1,0 +1,49 @@
+<view class="store-index">
+  <view class="store-index-bg">
+    <view class="store-index-bg-head">
+      <view class="img">
+        <image src="../../image/pic.jpg"></image>
+      </view>
+      <view class="txt">
+        <view class="tt">威迪斯面包</view>
+        <view class="notice">
+           秋季中秋节，美味月饼等你来。
+          </view>
+        <view class="address">
+          拱墅区学府路41号
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <view class="store-index-activity">
+
+    <view class="store-index-activity-content">
+      <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{activity}}" wx:for-index="idx">
+          <swiper-item>
+            <view class="store-index-activity-content-box">
+              <view class="head">
+                <view class="tt">活动</view>
+                <view class="ct">{{activity[idx].date}}</view>
+              </view>
+              <view class="img">
+                <image src="{{activity[idx].imgurl}}"></image>
+              </view>
+              <view class="txt">
+                <view class="desc">
+                  {{activity[idx].desc}}
+                </view>
+                <view class="price">{{activity[idx].price}}</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <navigator class="store-index-activity-btn">扫描购买</navigator>
+  </view>
+ 
+</view>

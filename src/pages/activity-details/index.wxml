@@ -1,0 +1,22 @@
+<view class="activity-details">
+  <view class="activity-details-bg">
+    <view class="img">
+      <image src="../../image/pic.jpg"></image>
+    </view>
+
+    <view class="activity-details-content">
+      <view class="title">活动详情</view>
+      <view class="ct">
+        <view class="txt">
+          中秋、国庆佳节是举家团圆、共享亲情的日子,也是商品的黄金销售期,市场将着重于重点商店开始展倾情买赠促销活动,以此换取商店在促销政策、终端陈列等一系列市场建设行。即日起，中秋节优惠活动正式开始，活动期间使用扫码购付款9.5折优惠，望广大用户快快扫一扫吧！
+        </view>
+        
+        <view class="info">
+          <text>活动时间：2017/09/30-2017/10/10</text>
+          <text>活动地点：各大参与商家</text>
+          <text>活动最终解释权归扫码购公司所有</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,70 @@
+@import "../../assets/scss/support";
+
+
+.good-details{
+
+  &-bg{
+    width: 100%;
+    height: 170px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: linear-gradient(#51bcf6, #3097e5, #1f83dd);
+
+    &-head{
+      @include storehead();
+      padding-top: 0;
+    }
+  }
+
+  &-content{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    background: $cl-bg;
+
+    image{
+      display: block;
+      margin: 14px auto;
+
+      width: 100%;
+    }
+    
+    .title{
+      padding: 10px 0;
+      margin: 0 13px 13px 13px;
+      text-align: center;
+      font-size: 17px;
+      color: $cl-aux;
+      border-bottom: 1px solid #efeff4;
+    }
+
+    .desc{
+      font-size: 14px;
+      margin: 0 13px;
+
+      text{
+        font-size: 14px;
+        color: #ec5937;
+      }
+    }
+  }
+
+  &-btn{
+    padding: 24px 0;
+    overflow: hidden;
+   
+   .btn{
+      @include commonbutton();
+      float: left;
+      margin: 0 14px auto;
+      width: 28.9%;
+      border-radius: 34px;
+      display: inline-block;
+      text-align: center;
+
+      &:last-child{
+        margin-left: 25px;
+      }
+    }
+  }
+}

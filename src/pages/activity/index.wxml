@@ -1,0 +1,74 @@
+<view class="register">
+  <view class="register-bg">
+    <view class="box">
+      <view class="slide">
+        <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item class="slide-item">
+              <image src="{{item}}" class="slide-item-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+  <view class="register-content">
+
+    <view class="register-content-list">
+      <block>
+        <view class="item">
+          <view class="img"><image src="../../image/pic.jpg"></image></view>
+          <view class="info">
+            <view class="top">
+              <view class="tt">米旗</view>
+              <view class="discount"></view>
+            </view>
+            <view class="bottom">国庆中秋大促销</view>
+          </view>
+
+          <view class="date">
+            <view class="tt">活动日期</view>
+            <view class="ct"><text>9/30</text>-<text>10/10</text></view>
+          </view>
+        </view>
+
+        <view class="item">
+          <view class="img"><image src="../../image/pic.jpg"></image></view>
+          <view class="info">
+            <view class="top">
+              <view class="tt">米旗<text class="discount">满100减15</text></view>
+            </view>
+            <view class="bottom">国庆中秋大促销</view>
+          </view>
+
+          <view class="date">
+            <view class="tt">活动日期</view>
+            <view class="ct"><text>9/30</text>-<text>10/10</text></view>
+          </view>
+        </view>
+
+
+        <view class="item">
+          <view class="img"><image src="../../image/pic.jpg"></image></view>
+          <view class="info">
+            <view class="top">
+              <view class="tt">米旗<text class="discount">满100减15</text></view>
+            </view>
+            <view class="bottom">国庆中秋大促销</view>
+          </view>
+
+          <view class="date">
+            <view class="tt">活动日期</view>
+            <view class="ct"><text>9/30</text>-<text>10/10</text></view>
+          </view>
+        </view>
+
+      </block>
+    </view>
+
+    <navigator url="/pages/bindmoblie/index" class="register-content-btn">立即注册</navigator>
+  </view>
+  
+</view>

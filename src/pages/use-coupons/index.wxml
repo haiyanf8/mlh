@@ -1,0 +1,59 @@
+<view class="coupons">
+
+  <view class="couponslist">
+    <view class="type">新人特惠</view>
+    <view class="item">
+      <view class="box">
+        <view class="left">
+          <text class="tt">满50减5</text>
+          <text class="date">有效期：2017.09.24-2017.09.29</text>
+        </view>
+
+        <view class="right">
+          <text class="ct">通用</text>
+          <text class="more">详情</text>
+        </view>
+      </view>
+    </view>
+    <view class="get">领取</view>
+  </view>
+
+  <view class="couponslist disabled">
+    <view class="type">新人特惠</view>
+    <view class="item">
+      <view class="box">
+        <view class="left">
+          <text class="tt">满50减5</text>
+          <text class="date">有效期：2017.09.24-2017.09.29</text>
+        </view>
+
+        <view class="right">
+          <text class="ct">通用</text>
+          <text class="more">详情</text>
+        </view>
+      </view>
+    </view>
+    <view class="get">领取</view>
+  </view>
+
+
+  <view class="couponslist used">
+    <view class="type">新人特惠</view>
+    <view class="item">
+      <view class="box">
+        <view class="left">
+          <text class="tt">满50减5</text>
+          <text class="date">有效期：2017.09.24-2017.09.29</text>
+        </view>
+
+        <view class="right">
+          <text class="ct">通用</text>
+          <text class="more">详情</text>
+        </view>
+      </view>
+    </view>
+    <view class="get">领取</view>
+  </view>
+
+</view>
+

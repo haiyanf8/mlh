@@ -1,0 +1,57 @@
+<view class="order-details">
+  <view class="order-details-bg">
+    <view class="commonhead">
+      <view class="top"></view>
+      <view class="middle">购物记录-清单</view>
+      <view class="bottom"></view>
+    </view>
+  </view>
+  
+  <view class="order-details-content">
+    <view class="order-details-content-conts">
+      <view class="num">单号：12-2017082419656-12</view>                 
+      <view class="desc">
+        <view class="img">
+          <image src="../../image/pic.jpg"></image>
+        </view>
+        <view class="txt">
+          <view class="name">
+            威迪斯面包
+          </view>
+          <view class="address">
+            拱墅区湖州街52号
+          </view>
+          <view class="date">
+            <text>2017/09/24</text>
+            <text>14:46:26</text>
+          </view>
+        </view>
+      </view>  
+
+      <view class="list">
+        <view class="item">
+          <view class="name">思碟轩月饼</view>
+          <view class="price">15.8</view>
+          <view class="number">×2</view>
+        </view>
+
+        <view class="item">
+          <view class="name">思碟轩月饼</view>
+          <view class="price">15.8</view>
+          <view class="number">×2</view>
+        </view>
+
+        <view class="item">
+          <view class="name">思碟轩月饼</view>
+          <view class="price">15.8</view>
+          <view class="number">×2</view>
+        </view>
+
+        <view class="total">共计：126.50元</view>
+      </view>           
+
+    </view>
+    <view class="btn" bindtap="goback">返回</view>
+  </view>
+</view>
+

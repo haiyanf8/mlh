@@ -1,0 +1,86 @@
+
+@import "../../assets/scss/support";
+
+.coupons{
+  position: relative;
+  
+  width: 100%;
+  height: 100%;
+  @include commonhead();
+
+  &-bg{
+    width: 100%;
+    height: 170px;
+    padding: 25px 15px 0 15px;
+    box-sizing: border-box;
+    //background-color: pink;
+
+    background: linear-gradient(#51bcf6, #3097e5, #1f83dd);
+  }
+
+  .couponslist{
+    
+    @include couponslist();
+    
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+    position: static;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    .item{
+      margin-bottom: 0;
+    }
+
+    &.disabled{
+      .item{
+        background-color: #ccc;
+
+        &::before,&::after{
+          background: url("http://wx.lian-gou.com/assets/img/coupon-arrow-disbaled.png");
+          background-size: contain;
+        }
+
+        .box{
+          border: 1px solid $cl-bg-gr;
+
+          .left{
+            border-right: 1px solid $cl-bg-gr;
+          }
+        }
+      }
+
+      .get{
+        border: 1px solid $cl-bg-gr;;
+        color: $cl-bg-gr;
+      }
+    }
+
+    &.used{
+      .get{
+        border: 1px solid #4294f7;
+        color: #4294f7;
+      }
+    }
+  }
+
+  .type{
+    padding:  0 0 10px 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: $cl-aux;
+    border-bottom: 1px solid #efeff4;
+  }
+  
+  .get{
+    margin-top: 10px;
+    padding: 7px 0;
+
+    border: 1px solid $cl-aux;
+    color: $cl-aux;
+    font-size: 15px;
+    text-align: center;
+  }
+}

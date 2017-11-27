@@ -1,0 +1,256 @@
+@import "../../assets/scss/support";
+
+
+.cart{
+
+  &-title{
+    position: relative;
+    padding: 16px 15px 16px 45px;
+    overflow: hidden;
+    font-size: 17px;
+
+    box-shadow: 0 3px 5px 2px rgba(210,210,210, .6);
+    
+    box-sizing: border-box;
+    background-color: $cl-bg;
+
+    &::before{
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -10px;
+      display: inline-block;
+      content: "";
+      width: 20px;
+      height: 20px;
+
+      background: url("http://wx.lian-gou.com/assets/img/home.png") no-repeat 0 center;
+      background-size: contain;
+    }
+  }
+
+  &-content{
+    background-color: $cl-bg;
+
+    .item{
+      padding: 12px 15px;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid  #efeff4;
+
+      .check{
+        @include check();
+      }
+
+      .img{
+        margin-right: 12px;
+
+        image{
+          display: block;
+          height: 60px;
+          width: 60px;
+        }
+      }
+
+      .txt{
+        flex: 2;
+      
+        .tt{
+          margin-bottom: 5px;
+          font-size: 17px;
+          color: $cl-aux;
+        }
+
+        .price{
+          font-size: 16px;
+          color: #ec5937;
+        }
+      }
+
+      .operation{
+        flex: 1;
+
+        .add{
+          float: right;
+          position: relative;
+          margin-top: 4px;
+          width: 18px;
+          height: 18px;
+          background: #4294f7;
+          border-radius: 50%;
+
+          &::before,&::after{
+            position: absolute;
+            left: 6px;
+            top: 8px;
+            content: "";
+            width: 8px;
+            height: 2px;
+            display: inline-block;
+            background: $cl-bg;
+            border-radius: 5px;
+          }
+
+          &::after{
+            left: 9px;
+            top: 5px;
+            height: 8px;
+            width: 2px;
+          }
+        }
+
+        .num{
+          float: right;
+          margin: 0 3px;
+          text-align: center;
+          display: inline-block;
+
+          width: 24px;
+          font-size: 15px;
+          color: $cl-main;
+        }
+
+        .plus{
+          margin-top: 4px;
+          float: right;
+          position: relative;
+          width: 18px;
+          height: 18px;
+          background: #4294f7;
+          border-radius: 50%;
+
+          &::before{
+            position: absolute;
+            left: 6px;
+            top: 8px;
+            content: "";
+            width: 8px;
+            height: 2px;
+            display: inline-block;
+            background: $cl-bg;
+            border-radius: 5px;
+          }
+        }        
+      }
+    }
+  }
+
+  &-discount{
+
+    margin-top: 5px;
+    padding: 12px 15px;
+    background-color: $cl-bg;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .counpons{
+      .tt{
+        float: left;
+        font-size: 14px;
+        color: $cl-main;
+
+        &::before{
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 15px;
+          background: url("http://wx.lian-gou.com/assets/img/my-icon-coupon.png") no-repeat 0 0;
+          background-size: contain;
+          vertical-align: middle;
+        }
+      }
+
+      .ct{
+        float: right;
+        width: 73px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 12px;
+        color: $cl-wt;
+        text-align: center;
+        background: #eb6876;
+        border-radius: 10px;
+
+        &::after{
+          margin-left: 5px;
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+
+          border-right: 1px solid $cl-wt;
+          border-bottom: 1px solid $cl-wt;
+          transform:rotate(-45deg);
+        }
+      }
+    }
+
+    .txt{
+      float: right;
+      width: 90px;
+      font-size: 12px;
+      color: #ca4e5d;
+      text-align: right;
+    }
+  }
+
+  &-box{
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    background-color: $cl-bg;
+    box-shadow: 0 -3px 5px 2px rgba(210,210,210, .6);
+
+    .total{
+      height: 22px;
+      line-height: 22px;
+      overflow: hidden;
+    
+      .btn{
+        width: 70px;
+        float: left;
+        
+        .check{
+          float: left;
+          display: block;
+          @include check();
+        }
+
+        .ct{
+          float: left;
+          font-size: 14px;
+          color: $cl-aux;
+        }
+      }
+
+      .txt{
+        float: left;
+        padding: 0 38px;
+        font-size: 17px;
+        color: $cl-main;
+      
+        text{
+          font-size: 20px;
+          color: #ec5937;
+        }
+      }
+
+      .num{
+        float: left;
+        width: 60px;
+        text-align: right;
+        font-size: 14px;
+        color: $cl-aux;
+      }
+    }
+    .compute{
+      @include commonbutton();
+
+      margin-top: 14px;
+      margin-right: 15px;
+      float: right;
+      width:28.9%;
+    }
+  }
+}

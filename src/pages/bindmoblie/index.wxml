@@ -1,0 +1,36 @@
+<view class="reg">
+  <view class="reg-head">
+    <view class="title">注册</view>
+  </view>
+  <view class="reg-content">
+    
+    <view class="reg-content-input">
+      <view class="num">+86</view>
+      <view class="tel">
+        <input type="number" placeholder="绑定手机" maxlength="11" bindinput="phoneInput"></input>
+      </view>
+    </view>
+
+
+    <view class="reg-content-input">
+      <view class="code">
+        <input type="number" placeholder="请输入验证码" maxlength="6" bindinput="codeInput"></input>
+      </view>
+      <button class="btn {{ codeisactive == true ? 'active' : ''}}"  disabled="{{disabled}}" plain = "{{plain}}" bindtap="getcode">
+        {{buttontxt}}
+        <text hidden="{{buttontxt == '获取验证码'}}">s</text>
+      </button>
+    </view>
+
+    <view class="reg-content-agreement">
+      <text class="agree {{isagree == true ? 'active': ''}}" bindtap="isagree"></text>
+      <text class="txt">我已同意扫码购注册协议</text>
+      <text class="more">查看协议</text>
+    </view>
+
+    <view class="registerbtn">
+      <button class="regbtn" disabled="{{regbtndis}}" bindtap="bindmoblie">马上注册</button>
+    </view>
+
+  </view> 
+</view>

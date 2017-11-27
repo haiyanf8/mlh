@@ -1,0 +1,48 @@
+<view class="noregister">
+  <view class="noregister-bg">
+    <view class="commonhead">
+      <view class="top"></view>
+      <view class="middle">欢迎使用扫码购</view>
+      <view class="bottom"></view>
+    </view>
+  </view>
+    <view class="noregister-content">
+      <view class="noregister-content-info">
+        <view class="box">
+          <view class="img c1">
+            <image src="../../image/noregister-ewm.png"></image>
+            独立二维码
+          </view>
+          <view class="txt">
+            商品拥有独立二维码，以消费者选购为目标导向，即具备购买识别功能，又可进行防伪认证。
+          </view>
+        </view>
+
+        <view class="box">
+          <view class="txt">
+            消费者拥有快捷购买通道，消费者信息追踪，可跨平台分享商品获得最新优惠。
+          </view>
+
+          <view class="img c2">
+            <image src="../../image/noregister-people.png"></image>
+            消费者
+          </view>
+        </view>
+
+        <view class="box">
+          <view class="img c3">
+            <image src="../../image/noregister-cart.png"></image>
+            商品详情
+          </view>
+          <view class="txt">
+            具备商品详情展示功能，可展示厂商，保质期等商品详细信息，便于消费者甄选商品。
+          </view>
+        </view>
+      </view>
+
+      <navigator url="/pages/bindmoblie/index" class="noregister-content-btn">马上注册</navigator>
+      
+    </view>
+  
+</view>
+
